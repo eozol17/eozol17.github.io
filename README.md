@@ -1,135 +1,110 @@
-# Eren Ege Özol - Portfolio Website
+# React Portfolio
 
-A modern, responsive personal portfolio website showcasing skills in Data Science and Web Development.
+A modern, interactive portfolio website built with React, featuring smooth animations and a dark/light theme toggle.
 
-## 🚀 Recent Updates & Improvements
+## Features
 
-### ✨ Modern Design & User Experience
-- **Semantic HTML5**: Updated structure with proper `<header>`, `<main>`, `<section>`, `<article>`, and `<footer>` elements
-- **Responsive Design**: Mobile-first approach with flexible layouts that work on all devices
-- **Modern CSS**: Implemented CSS custom properties (variables), Flexbox, and modern animations
-- **Accessibility**: Added proper ARIA labels, focus states, and keyboard navigation support
+- **Modern React Architecture**: Built with React 19 and Vite
+- **Smooth Animations**: Powered by Framer Motion
+- **Theme Toggle**: Dark and light mode support
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Component-Based**: Modular, reusable components
+- **GitHub Pages Ready**: Configured for easy deployment
 
-### 🎨 Visual Enhancements
-- **Improved Typography**: Better font hierarchy and readability
-- **Modern Color Palette**: Consistent color scheme with CSS custom properties
-- **Smooth Animations**: Fade-in effects, hover animations, and parallax scrolling
-- **Interactive Elements**: Enhanced button interactions and image hover effects
-- **Dark Theme Support**: Optional dark mode toggle (can be enabled in JavaScript)
+## Tech Stack
 
-### 📱 Technical Improvements
-- **Performance Optimized**: Debounced scroll handlers and efficient animations
-- **SEO Enhanced**: Added meta descriptions, keywords, and proper semantic structure
-- **Modern JavaScript**: ES6+ features with intersection observers for scroll animations
-- **Cross-browser Compatible**: Vendor prefixes and fallbacks for older browsers
+- **Frontend**: React 19, React Router DOM
+- **Styling**: Tailwind CSS 4.x
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
 
-### 📝 Content Updates
-- **Professional Tone**: Updated content to reflect current status and expertise
-- **Current Skills**: Highlighted Data Science, Python, R, SQL, and web development
-- **Better Descriptions**: More engaging and informative content throughout
-- **Updated Contact**: Professional contact section with clear call-to-action
-
-## 🛠️ Technologies Used
-
-- **HTML5**: Semantic markup and modern structure
-- **CSS3**: Custom properties, Flexbox, animations, and responsive design
-- **JavaScript (ES6+)**: Modern features, intersection observers, and interactive elements
-- **Google Fonts**: Montserrat and Sacramento fonts
-- **GitHub Pages**: Hosting platform
-
-## 📁 File Structure
+## Project Structure
 
 ```
-eozol17.github.io/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # Modern CSS with custom properties
-├── js/
-│   └── script.js       # Interactive JavaScript features
-├── images/             # Image assets
-└── README.md          # This file
+src/
+├── components/          # Reusable UI components
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── ThemeToggle.jsx
+│   └── ...
+├── context/            # React Context providers
+│   └── ThemeContext.jsx
+├── assets/             # Static assets
+└── main.jsx           # Application entry point
 ```
 
-## 🎯 Key Features
+## Getting Started
 
-### Responsive Design
-- Mobile-first approach
-- Flexible layouts for all screen sizes
-- Touch-friendly interactions
+### Prerequisites
 
-### Performance
-- Optimized images and animations
-- Debounced scroll handlers
-- Efficient CSS with custom properties
+- Node.js (v18 or higher)
+- npm or yarn
 
-### Accessibility
-- Semantic HTML structure
-- Proper focus management
-- Keyboard navigation support
-- Screen reader friendly
+### Installation
 
-### Modern Interactions
-- Smooth scrolling
-- Intersection observer animations
-- Parallax effects
-- Hover animations
-- Typewriter effect for subtitle
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## 🚀 Getting Started
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-1. Clone or download the repository
-2. Open `index.html` in a web browser
-3. For development, use a local server for best experience
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-## 🔧 Customization
+## Available Scripts
 
-### Colors
-All colors are defined as CSS custom properties in `:root`. Modify these to change the entire color scheme:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run deploy` - Build and deploy to GitHub Pages
+- `npm run lint` - Run ESLint
 
-```css
-:root {
-  --primary-blue: #301ce0;
-  --secondary-blue: #49bad8;
-  /* ... other colors */
-}
+## Deployment
+
+### GitHub Pages
+
+The project is configured for GitHub Pages deployment:
+
+```bash
+npm run deploy
 ```
 
-### Animations
-Animations can be disabled for users who prefer reduced motion:
+This will build the project and push it to the `gh-pages` branch.
 
-```css
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-```
+### Other Platforms
 
-### Dark Theme
-To enable the dark theme toggle, uncomment this line in `script.js`:
-```javascript
-// createThemeToggle();
-```
+You can deploy the built files from the `dist/` folder to any static hosting service:
+- Netlify
+- Vercel
+- AWS S3
+- Firebase Hosting
 
-## 📱 Browser Support
+## Customization
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- Update personal information in components
+- Modify theme colors in `tailwind.config.js`
+- Add new sections by creating components
+- Customize animations in Framer Motion components
 
-## 🔗 Links
+## Contributing
 
-- **Live Site**: [eozol17.github.io](https://eozol17.github.io)
-- **LinkedIn**: [linkedin.com/in/eozol](https://www.linkedin.com/in/eozol)
-- **GitHub**: [github.com/eozol17](https://github.com/eozol17)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-## 📄 License
+## License
 
-© 2024 Eren Ege Özol. All rights reserved.
+This project is open source and available under the [MIT License](LICENSE).
 
----
+## Contact
 
-*This portfolio website showcases modern web development practices and serves as a demonstration of front-end development skills.*
+- Email: erenege743@gmail.com
+- LinkedIn: [eozol](https://www.linkedin.com/in/eozol)
+- GitHub: [eozol17](https://github.com/eozol17)

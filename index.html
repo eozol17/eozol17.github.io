@@ -1,101 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="images/favicon.ico" />
-    <!--- Adding font:Montserrat -->
-    <!--- Adding font:Sacramento -->
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="description" content="Eren Ege Özol - Data Scientist & Full-Stack Developer specializing in Python, R, SQL, and web development. Based in Netherlands." />
+    <meta name="keywords" content="data scientist, developer, python, R, SQL, web development, Netherlands, machine learning, react" />
+    <meta name="author" content="Eren Ege Özol" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Eren Ege Özol - Data Scientist & Developer" />
+    <meta property="og:description" content="Passionate about turning data into insights and building solutions that make a difference." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eozol17.github.io" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/60622320?v=4" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Eren Ege Özol - Data Scientist & Developer" />
+    <meta name="twitter:description" content="Passionate about turning data into insights and building solutions that make a difference." />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/60622320?v=4" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+    
     <title>Eren Ege Özol - Data Scientist & Developer</title>
-    <meta name="description" content="Eren Ege Özol - Data Scientist and Developer specializing in Python, R, SQL, and web development. Based in Netherlands.">
-    <meta name="keywords" content="data scientist, developer, python, R, SQL, web development, Netherlands">
-    <meta name="author" content="Eren Ege Özol">
   </head>
   <body>
-    <header class="hero-section">
-      <img class="top-cloud" src="images/cloud.png" alt="cloud-image" />
-      <h1 class="name-header">I'm Eren</h1>
-      <h2 class="expa">a Data Scientist & Developer</h2>
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image" />
-      <img class="mountain" src="images/mountain.png" alt="mountain-image" />
-    </header>
-    <main class="main-content">
-      <section class="profile">
-        <img
-          class="Eren-Image"
-          src="https://avatars.githubusercontent.com/u/60622320?v=4"
-          alt="Eren Ege Özol Profile Picture"
-        />
-        <h2>Hello.</h2>
-        <p>
-          I'm Eren, a passionate Data Scientist and Developer based in the Netherlands. 
-          I completed my Masters at <strong>Jheronimus Academy of Data Science</strong> in
-          <strong>Data Science in Business and Entrepreneurship</strong>. I love turning data into insights and building solutions that make a difference.
-        </p>
-      </section>
-      <hr />
-      <section class="skills">
-        <h2>My Skills</h2>
-        <article class="skill-row">
-          <img
-            class="Vader-Image"
-            src="images/vader.png"
-            alt="Programming skills illustration"
-          />
-          <h3>Data Science & Development</h3>
-          <p>
-            I specialize in Python, R, and SQL for data analysis and machine learning. 
-            I'm experienced with web development using HTML, CSS, JavaScript, and modern frameworks. 
-            I work with Git/GitHub for version control and have experience with cloud platforms like Firebase and AWS. 
-            I love creating data-driven solutions that solve real-world problems.
-          </p>
-        </article>
-        <article class="skill-row">
-          <img class="Yoda-Image" src="images/Yoda.png" alt="Languages illustration" />
-          <h3>Languages & Communication</h3>
-          <p>
-            I'm fluent in English and German, with a TOEFL score of 109/120. 
-            I believe effective communication is key to successful projects and enjoy collaborating with international teams.
-          </p>
-          <p>
-            Ich spreche Englisch und Deutsch. Meine TOEFL-Ergebnis ist 109/120. 
-            Ich liebe es, neue Sprachen zu lernen und mit Menschen aus verschiedenen Kulturen zu kommunizieren.
-          </p>
-        </article>
-        <img
-          class="LastGiphy"
-          src="https://media.giphy.com/media/3ornk3ifPpyCwE8Ti8/giphy.gif"
-          alt="Coding animation"
-        />
-      </section>
-      <hr />
-      <section class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Let's collaborate on something amazing!</h3>
-        <p>
-          I'm always interested in new opportunities and exciting projects. 
-          Whether you need data analysis, web development, or have an innovative idea to discuss, 
-          I'd love to hear from you!
-        </p>
-        <a class="btn" href="mailto:erenege743@gmail.com">CONTACT ME</a>
-        <hr />
-      </section>
-    </main>
-    <footer class="bottom-container">
-      <nav class="social-links">
-        <a class="footer-link" href="https://www.linkedin.com/in/eozol" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/eozol17" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </nav>
-      <p>&copy; 2024 Eren Ege Özol. All rights reserved.</p>
-    </footer>
-    <script src="js/script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
