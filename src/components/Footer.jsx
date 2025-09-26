@@ -118,6 +118,31 @@ const Footer = () => {
               <span>Hosted on GitHub Pages</span>
             </div>
           </div>
+          
+          {/* Yoda Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex justify-center mt-8"
+          >
+            <motion.img
+              src="/images/Yoda.png"
+              alt="May the Force be with you"
+              className="w-24 h-24 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.div>
+          
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-center text-secondary-500 dark:text-secondary-600 text-sm mt-2 italic"
+          >
+            "May the Force be with you" - Master Yoda
+          </motion.p>
         </div>
       </div>
     </footer>
