@@ -47,8 +47,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
+            style={{ color: '#1e40af' }}
           >
-            I'm Eren
+            Hello! I'm Eren Ege Özol
           </motion.h1>
 
           {/* Dynamic Role */}
@@ -58,8 +59,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mb-8"
           >
-            <h2>
-              a{' '}
+            <h2 style={{ color: '#1e40af' }}>
+              A passionate{' '}
               <motion.span
                 key={currentRole}
                 initial={{ opacity: 0, y: 20 }}
@@ -74,16 +75,20 @@ const Hero = () => {
           </motion.div>
 
           {/* Description */}
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             className="mb-8"
-            style={{ color: '#1e293b' }}
+            style={{ color: '#1e40af', lineHeight: '1.6' }}
           >
-            Passionate about turning data into insights and building solutions that make a difference. 
-            Based in the Netherlands, I specialize in Data Science, Machine Learning, and Full-Stack Development.
-          </motion.p>
+            <p style={{ marginBottom: '1rem' }}>
+              Based in the Netherlands. I completed my Masters at Jheronimus Academy of Data Science in Data Science in Business and Entrepreneurship.
+            </p>
+            <p style={{ marginBottom: '1rem' }}>
+              I love turning complex data into actionable insights and building solutions that solve real-world problems. My journey in technology started with curiosity and has evolved into a passion for creating meaningful impact through code.
+            </p>
+          </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
