@@ -127,7 +127,7 @@ const Footer = () => {
             className="flex justify-center mt-8"
           >
             <motion.img
-              src="/images/Yoda.png"
+              src="/Yoda.png"
               alt="May the Force be with you"
               className="w-24 h-24 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
               whileHover={{ scale: 1.1, rotate: 5 }}
