@@ -131,10 +131,10 @@ const Contact = () => {
             {/* Contact Information */}
             <motion.div variants={itemVariants} className="space-y-8">
               <div className="space-y-6">
-                <h3 className="text-2xl font-semibold text-blue-800 dark:text-blue-300">
+                <h3 className="text-2xl font-semibold" style={{ color: '#1e40af !important' }}>
                   Let's Start a Conversation
                 </h3>
-                <p className="text-lg leading-relaxed text-blue-800 dark:text-blue-300">
+                <p className="text-lg leading-relaxed" style={{ color: '#1e40af !important' }}>
                   Whether you need data analysis, web development, or have an innovative idea to discuss, 
                   I'd love to hear from you. Let's create something extraordinary together!
                 </p>
@@ -153,10 +153,10 @@ const Contact = () => {
                       <Icon className="text-primary-600 dark:text-primary-400" size={24} />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-800 dark:text-blue-300">
+                      <h4 className="font-semibold" style={{ color: '#1e40af !important' }}>
                         {title}
                       </h4>
-                      <p className="text-blue-800 dark:text-blue-300">
+                      <p style={{ color: '#1e40af !important' }}>
                         {value}
                       </p>
                     </div>

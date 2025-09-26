@@ -47,7 +47,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-blue-800 dark:text-blue-300"
+            style={{ color: '#1e40af !important' }}
           >
             Hello! I'm Eren Ege Özol
           </motion.h1>
@@ -59,7 +59,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mb-8"
           >
-            <h2 className="text-blue-800 dark:text-blue-300">
+            <h2 style={{ color: '#1e40af !important' }}>
               A passionate{' '}
               <motion.span
                 key={currentRole}
@@ -67,7 +67,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
-                className="text-blue-600 dark:text-blue-400 font-bold"
+                style={{ color: '#0284c7 !important', fontWeight: 'bold' }}
               >
                 {roles[currentRole]}
               </motion.span>
@@ -79,12 +79,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="mb-8 text-blue-800 dark:text-blue-300 leading-relaxed"
+            className="mb-8 leading-relaxed"
+            style={{ color: '#1e40af !important' }}
           >
-            <p className="mb-4">
+            <p className="mb-4" style={{ color: '#1e40af !important' }}>
               Based in the Netherlands. I completed my Masters at Jheronimus Academy of Data Science in Data Science in Business and Entrepreneurship.
             </p>
-            <p className="mb-4">
+            <p className="mb-4" style={{ color: '#1e40af !important' }}>
               I love turning complex data into actionable insights and building solutions that solve real-world problems. My journey in technology started with curiosity and has evolved into a passion for creating meaningful impact through code.
             </p>
           </motion.div>
